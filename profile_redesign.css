@@ -1,0 +1,241 @@
+/* Profile Page Redesign */
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.profile-sidebar {
+    flex: 1;
+    min-width: 250px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    align-self: flex-start;
+}
+
+.profile-main {
+    flex: 3;
+    min-width: 400px;
+}
+
+.profile-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.profile-header {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-header h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.3s;
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: #088178;
+    box-shadow: 0 0 0 3px rgba(8, 129, 120, 0.1);
+}
+
+.profile-img-upload {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #066c65;
+}
+
+.sidebar-nav {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-link {
+    display: block;
+    padding: 12px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #f5f5f5;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+    background: #088178;
+    color: #fff;
+}
+
+.data-row {
+    display: flex;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 15px 0;
+}
+
+.data-label {
+    width: 150px;
+    font-weight: 600;
+    color: #555;
+    flex-shrink: 0;
+}
+
+.data-value {
+    color: #333;
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 20px;
+        flex-direction: column;
+    }
+}
+
+/* Action Buttons */
+.btn-action {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+.btn-view {
+    background: #f3e5f5;
+    color: #7b1fa2;
+}
+
+.btn-view:hover {
+    background: #7b1fa2;
+    color: #fff;
+}
+
+.btn-edit {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.btn-edit:hover {
+    background: #1976d2;
+    color: #fff;
+}
+
+.btn-cancel {
+    background: #ffebee;
+    color: #d32f2f;
+}
+
+.btn-cancel:hover {
+    background: #d32f2f;
+    color: #fff;
+}
+
+.btn-review {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.btn-review:hover {
+    background: #2e7d32;
+    color: #fff;
+}
+
+.btn-disabled {
+    background: #f5f5f5;
+    color: #bdbdbd;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Wishlist Action Buttons */
+.btn-cart {
+    background: #e0f2f1;
+    color: #088178;
+}
+
+.btn-cart:hover {
+    background: #088178;
+    color: #fff;
+}
+
+.btn-remove {
+    background: #ffebee;
+    color: #d32f2f;
+}
+
+.btn-remove:hover {
+    background: #d32f2f;
+    color: #fff;
+}
